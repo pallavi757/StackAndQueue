@@ -30,6 +30,14 @@ namespace StackQueue
                 Head = node;
             }
         }
+        public void RemoveNode()
+        {
+            while (Head != null)
+            {
+                Console.WriteLine("pop = {0}", Head.data);
+                Head = Head.next;
+            }
+        }
         public void Display()
         {
             Node temp = Head;

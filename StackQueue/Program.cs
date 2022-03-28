@@ -15,6 +15,10 @@ namespace StackQueue
             stack.Push(thirdNode);
             stack.DisplayStack();
 
+            stack.Pop();
+            stack.DisplayStack();
+
+
 
         }
 
