@@ -38,6 +38,19 @@ namespace StackQueue
                 Head = Head.next;
             }
         }
+        public void AppendNode(Node node)
+        {
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                Tail.next = node;
+                Tail = node;
+            }
+        }
         public void Display()
         {
             Node temp = Head;
@@ -47,7 +60,7 @@ namespace StackQueue
             }
             else
             {
-                Console.WriteLine("Stack as follows");
+                Console.WriteLine("Queue as follows");
 
             }
             while (temp != null)
@@ -55,7 +68,7 @@ namespace StackQueue
                 Console.Write(temp.data);
                 if (temp.next != null)
                 {
-                    Console.WriteLine("");
+                    Console.Write("->");
                 }
                 temp = temp.next;
             }

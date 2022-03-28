@@ -5,18 +5,23 @@ namespace StackQueue
     {
         public static void Main(string[] args)
         {
-            Node firstNode = new Node(70);
+            Node firstNode = new Node(56);
             Node secondNode = new Node(30);
-            Node thirdNode = new Node(56);
+            Node thirdNode = new Node(70);
 
-            Stack stack = new Stack();  //Stack
-            stack.Push(firstNode);
-            stack.Push(secondNode);
-            stack.Push(thirdNode);
-            stack.DisplayStack();
+            //Stack stack = new Stack();  //Stack
+            //stack.Push(firstNode);
+            //stack.Push(secondNode);
+            //stack.Push(thirdNode);
+            //stack.DisplayStack();
 
-            stack.Pop();
-            stack.DisplayStack();
+            //stack.Pop();
+            //stack.DisplayStack();
+            Queue queue = new Queue();  //Queue
+            queue.Enqueue(firstNode);
+            queue.Enqueue(secondNode);
+            queue.Enqueue(thirdNode);
+            queue.DisplayQueue();
 
 
 
