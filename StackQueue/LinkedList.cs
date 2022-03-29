@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StackQueue
 {
-    internal class LinkedList
+     public class LinkedList
     {
         public Node Head;
         public Node Tail;
@@ -60,7 +60,7 @@ namespace StackQueue
             }
             else
             {
-                Console.WriteLine("Queue as follows");
+                Console.WriteLine("stack as follows");
 
             }
             while (temp != null)
@@ -68,7 +68,7 @@ namespace StackQueue
                 Console.Write(temp.data);
                 if (temp.next != null)
                 {
-                    Console.Write("->");
+                    Console.Write(" ");
                 }
                 temp = temp.next;
             }

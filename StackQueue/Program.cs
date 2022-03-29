@@ -17,7 +17,7 @@ namespace StackQueue
 
             //stack.Pop();
             //stack.DisplayStack();
-            Queue queue = new Queue();  //Queue
+            Queue queue = new Queue();  //Adding Element in Queue
             queue.Enqueue(firstNode);
             queue.Enqueue(secondNode);
             queue.Enqueue(thirdNode);
