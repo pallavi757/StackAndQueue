@@ -34,7 +34,7 @@ namespace StackQueue
         {
             while (Head != null)
             {
-                Console.WriteLine("pop = {0}", Head.data);
+                Console.WriteLine("{0} is deleted", Head.data);
                 Head = Head.next;
             }
         }
@@ -56,7 +56,7 @@ namespace StackQueue
             Node temp = Head;
             if (temp == null)
             {
-                Console.WriteLine("empty");
+                Console.WriteLine("Queue is empty");
             }
             else
             {

@@ -22,9 +22,8 @@ namespace StackQueue
             queue.Enqueue(secondNode);
             queue.Enqueue(thirdNode);
             queue.DisplayQueue();
-
-
-
+            queue.Dequeue();
+            queue.DisplayQueue();
         }
 
     }
